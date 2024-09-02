@@ -37,14 +37,6 @@ export function createCategoryFamous(item) {
     btnCategory.classList.add('box2Btn');
     btnCategory.classList.add('box2');
 
-    // btnCategory.onclick = () => {
-    //     let id = btnCategory.getAttribute('genreid')
-    //     let box = document.querySelector(".dspGrid2")
-    //     box.innerHTML = ""
-    //     getData("discover/movie?with_genres=" + id, option)
-    //         .then(res => reload(res.data.results.slice(0, 8), "#dspGrid2", createGrid))
-    //         .catch(error => console.error(error));
-    // }
 
     return btnCategory
 }

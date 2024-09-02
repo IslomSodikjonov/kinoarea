@@ -31,22 +31,3 @@ export function initializeSwiper2() {
         centeredSlides: false,
     });
 }
-
-// export function initializeSwiper3() {
-//     return new Swiper(".mySwiperUppcoming", {
-//         modules: [Navigation, Pagination],
-//         pagination: {
-//           el: ".swiper-pagination",
-//           type: "fraction",
-//         },
-//         navigation: {
-//           nextEl: ".swiper-button-next",
-//           prevEl: ".swiper-button-prev",
-//         }, 
-//         slidesPerView: 4,
-//         slidesPerGroup: 4,        
-//         spaceBetween: 10,         
-//         freeMode: true,          
-//         centeredSlides: false, 
-//     })
-// }

@@ -27,7 +27,7 @@ export function createGrid(obj) {
 
     gridElem.onclick = () => {
         localStorage.setItem('filmId', obj.id)
-        window.location.href = '/pages/watchfilm/'
+        window.location.href = 'http://localhost:5173/pages/watchfilm/'
     }
 
     gridElem.append(population, filmimg, filmName, filmCategory);

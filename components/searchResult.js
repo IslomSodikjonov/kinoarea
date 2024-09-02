@@ -26,10 +26,10 @@ export function createSearches(item) {
     search_item.onclick = () => {
         if (item.title || item.media_type === "tv") {
             localStorage.setItem('filmId', item.id)
-            window.location.href = '/pages/watchfilm/'
+            window.location.href = 'http://localhost:5173/pages/watchfilm/'
         } else {
             localStorage.setItem('actorId', item.id)
-            window.location.href = '/pages/actor/'
+            window.location.href = 'http://localhost:5173/pages/actor/'
         }
     }
 

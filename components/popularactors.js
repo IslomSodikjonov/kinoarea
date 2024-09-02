@@ -37,7 +37,7 @@ function popularActors1(item, i) {
 
     places.onclick = () => {
         localStorage.setItem('actorId', item.id)
-        window.location.href = '/pages/actor/'      
+        window.location.href = 'http://localhost:5173/pages/actor/'      
     }
 
     return places

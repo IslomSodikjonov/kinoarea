@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>KINOAREA</title>
+	</head>
+
+	<body>
+		<div class="search_modal"></div>
+
+		<div class="wrap_bg">
+
+			<div class="backgroundImg" style="background-image: url('https://image.tmdb.org/t/p/original//4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg');">
+				<div class="backgroundImgBlur">
+	
+					<header></header>
+
+					<section>
+						<div class="container boxcont">
+							<div class="boxHead">
+								<h1>Сейчас в кинo</h1>
+								<div class="box1line"></div>
+								<div class="genres">
+									<button genreid="28%2C%2012%2C%2035" id="all_genres" class="box1Btn active_btn_category">Все</button>
+									
+								</div>
+							</div>
+							<div class="dspGrid dspGrid1"></div>
+							<button class="ShowMoreBox1">Bсе новинки</button>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+		
+
+		<section>
+			<div class="container">
+				<div class="new_trailers">
+					<div class="new_trailers_head">
+						<h1 class="new_trail_title">Новые трейлеры</h1>
+						<p class="all_tralers">Все трейлеры →</p>
+					</div>
+		
+					<div class="new_trailers_play">
+						<div class="play_box">
+							<iframe
+							class="main_page_iframe" 
+							width="100%" 
+							height="100%" 
+							src="https://www.youtube.com/embed/RUemZ2KA46Y?si=8DDN4LyiczLzb_D4" title="YouTube video player" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+							allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+		
+					<div class="new_trailers_info">
+						<div class="left">
+							<h3 class="name_of_trailer">Форсаж 11</h3>
+							<img src="./vk.svg" alt="" class="sourses_btn" />
+							<img src="./instagram.svg" alt="" class="sourses_btn" />
+							<img src="./facebook.svg" alt="" class="sourses_btn" />
+							<img src="./twitter.svg" alt="" class="sourses_btn" />
+							<img src="./more.svg" alt="" class="sourses_btn" />
+						</div>
+		
+						<div class="right">
+							<div class="like_box">
+								<div class="likewrap">
+									<img src="./like.svg" alt="" class="like" />
+								</div>
+								<p class="likes_num">3 245</p>
+							</div>
+							<div class="like_box">
+								<div class="likewrap">
+									<img src="./dislike.svg" alt="" class="dislike" />
+								</div>
+								<p class="dislikes_num">420</p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="new_trailers_bottom">
+
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								
+							</div>
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="boxHead">
+					<h1>Популярные фильмы</h1>
+					<div class="box2line"></div>
+					<button year = "2024" class="box2Btn active_btn_category">Всё время</button>
+					<button year = "2023" class="box2Btn">2023</button>
+					<button year = "2022" class="box2Btn">2022</button>
+					<button year = "2021" class="box2Btn">2021</button>
+					<button year = "2020" class="box2Btn">2020</button>
+					<button year = "2019" class="box2Btn">2019</button>
+					<button year = "2018" class="box2Btn">2018</button>
+				</div>
+
+				<div class="swiper mySwiperPopular">
+					<div class="swiper-wrapper" id="dspGrid2">
+						
+					</div>
+					
+					<div class="pag_bar">
+						<div id="prev_actor" class="swiper-button-prev"></div>
+						<div id="pag_actor" class="swiper-pagination"></div>
+						<div id="next_actor" class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="new_trailers">
+					<div class="new_trailers_head">
+						<h1 class="new_trail_title">Ожидаемые новинки</h1>
+						<div class="pag_info">
+							<div id="prev_actor2" class="swiper-button-prev"></div>
+							<div id="pag_actor2" class="swiper-pagination"></div>
+							<div id="next_actor2" class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="swiper mySwiperUppcoming">
+						<div class="swiper-wrapper" id="dspGrid3">
+						  
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="popular_persons">
+					<div class="popular_per_head">
+						<h1 class="popular_title">Популярные персоны</h1>
+						<div class="right2">
+							<p class="time_popular_btn">За год</p>
+							<p class="time_popular_btn">За месяц</p>
+							<p class="time_popular_btn">За неделю</p>
+						</div>
+					</div>
+	
+					<div class="popular_main">
+						<div class="leftside">
+							<!-- <div class="places">
+								<p class="place_order" id="yellow_txt">1-е место</p>
+								<div class="places_bottom">
+									<p class="name_actor">Квентин Тарантино</p>
+									<p class="org_name_actor">Quentin Tarantino</p>
+									<p class="year_actor" id="yellow_txt">57 лет</p>
+								</div>
+							</div> -->
+						</div>
+						<div class="rightside">
+							<!-- <div class="actor_info">
+								<div class="left3">
+									<p class="name_actor_other">Тинто Брасс</p>
+									<p class="org_actor_other">Tinto Brass</p>
+									<p class="year_other">87 лет</p>
+								</div>
+								<p class="place_order" id="yellow_txt">3-е место</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<footer></footer>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

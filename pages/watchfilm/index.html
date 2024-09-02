@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="search_modal"></div>
+
+    <div class="wrap_bg">
+        <div class="backgroundImg">
+            <div class="backgroundImgBlur">
+                <header></header>
+                
+                <section>
+                    <div class="container">
+                        <div class="main_card_movie">
+                            <div class="card_film_box">
+                                <div class="left_main_card">
+                
+                                </div>
+                                <div class="right_main_card">
+                                    <p class="path">Главная > Фильмы > <span class="name_Kino"></span></p>
+                                    <h1 class="main_title"></h1>
+                                    <h3 class="org_name_movie"></h3>
+                
+                                    <div class="rating_tech">
+                                        <canvas id="MyChart"></canvas>
+                                    </div>
+                
+                                    <div class="descr_box">
+                                        <p class="descr"></p>
+                                    </div>
+                
+                                    <div class="bottom_film">
+                                        <div class="watch_trealer_btn">
+                                             <img src="../../play2.svg" alt="">
+                                             <p>Смотреть трейлер</p>  
+                                        </div>
+                                        <div class="left">
+                                            <img src="../../vk.svg" alt="" class="sourses_btn" />
+                                            <img src="../../instagram.svg" alt="" class="sourses_btn" />
+                                            <img src="../../facebook.svg" alt="" class="sourses_btn" />
+                                            <img src="../../twitter.svg" alt="" class="sourses_btn" />
+                                            <img src="../../more.svg" alt="" class="sourses_btn" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="right2">
+                                <div class="like_box">
+                                    <div class="likewrap">
+                                        <img src="../../like.svg" alt="" class="like" />
+                                    </div>
+                                </div>
+                                <div class="like_box">
+                                    <div class="likewrap">
+                                        <img src="../../dislike.svg" alt="" class="dislike" />
+                                    </div>
+                                </div>
+                                <div class="like_box">
+                                    <div class="likewrap">
+                                        <img src="../../like2.svg" alt="" class="like2"/>
+                                    </div>
+                                </div>
+                
+                                <p class="saved">В избранном у 37933 человек</p>
+                            </div>
+                            
+                            <section> 
+                                <div class="information">
+            
+                                    <div class="left_info">
+                                        <p class="white_info">Год:</p>
+                                        <p class="white_info">Страна:</p>
+                                        <p class="white_info">Слоган:</p>
+                                        <p class="white_info">Режиссер:</p>
+                                        <p class="white_info">Сценарий:</p>
+                                        <p class="white_info">Продюсер:</p>
+                                        <p class="white_info">Оператор:</p>
+                                        <p class="white_info">Комрозитор:</p>
+                                    </div>
+                                   
+                                    <div class="rigth_info">
+                                        <p class="yellow_info" id="year_movie">2020</p>
+                                        <p class="yellow_info" id="city">Великобритания, Австралия</p>
+                                        <p class="yellow_info">«Подбери ключ к свободе»</p>
+                                        <p class="yellow_info" id="product_person">Фрэнсис Аннан</p>
+                                        <p class="yellow_info">Фрэнсис Аннан, Л.Х. Адамс, Кэрол Гриффитс,</p>
+                                        <p class="yellow_info">Дэвид Баррон, Марк Блэйни, Гари Хэмилтон,</p>
+                                        <p class="yellow_info">Джеффри Холл</p>
+                                        <p class="yellow_info">Дэвид Хиршфелдер</p>
+                                    </div>
+            
+                                    <div class="left_info">
+                                        <p class="white_info">Художник:</p>
+                                        <p class="white_info">Монтаж:</p>
+                                        <p class="white_info">Жанр:</p>
+                                        <p class="white_info">Сборы в мире:</p>
+                                        <p class="white_info">Премьера (мир):</p>
+                                        <p class="white_info">Премьера (РФ):</p>
+                                        <p class="white_info">Возраст:</p>
+                                        <p class="white_info">Время:</p>
+                                    </div>
+                                    
+                                    <div class="rigth_info">
+                                        <p class="yellow_info">Скотт Бёрд, Эрика Брайан, Мариот Керр,</p>
+                                        <p class="yellow_info">Ник Фентон</p>
+                                        <p class="yellow_info" id="genre_movie">Триллер,</p>
+                                        <p class="yellow_info" id="revenue_movie">$12 808</p>
+                                        <p class="yellow_info" id="release_world">1 марта 2020</p>
+                                        <p class="yellow_info" id="release_country">14 мая 2020</p>
+                                        <p class="yellow_info">16+</p>
+                                        <p class="yellow_info" id="time_movie">106 мин. / 01:46</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="new_trailers">
+                <div class="new_trailers_head">
+                    <h1 class="new_trail_title">В главных ролях:</h1>
+                    <p class="all_tralers">Все актеры →</p>
+                </div>
+                <div class="actors_box">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="new_trailers">
+                <div class="new_trailers_head">
+                    <h1 class="new_trail_title">Трейлеры фильма</h1>
+                    <p class="all_tralers">Все трейлеры →</p>
+                </div>
+            
+                <div class="new_trailers_play">
+                    <div class="play_box">
+                        <iframe 
+                        class="my_trailer"
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+    
+                <div class="new_trailers_info">
+                    <div class="left">
+                        <h3 class="name_of_trailer">Name</h3>
+                        <img src="../.././vk.svg" alt="" class="sourses_btn" />
+                        <img src="../.././instagram.svg" alt="" class="sourses_btn" />
+                        <img src="../.././facebook.svg" alt="" class="sourses_btn" />
+                        <img src="../.././twitter.svg" alt="" class="sourses_btn" />
+                        <img src="../.././more.svg" alt="" class="sourses_btn" />
+                    </div>
+    
+                    <div class="right">
+                        <div class="like_box">
+                            <div class="likewrap">
+                                <img src="../.././like.svg" alt="" class="like" />
+                            </div>
+                            <p class="likes_num">3 245</p>
+                        </div>
+                        <div class="like_box">
+                            <div class="likewrap">
+                                <img src="../.././dislike.svg" alt="" class="dislike" />
+                            </div>
+                            <p class="dislikes_num">420</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="new_trailers">
+                <div class="poster_head">
+                    <h1 class="new_trail_title">Постеры к фильму</h1>
+                    <p class="all_tralers">Все постеры →</p>
+                </div>
+                <h4 class="name_movie_poster"></h4>
+                <div class="poster_box">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="new_trailers">
+                <div class="poster_head">
+                    <h1 class="new_trail_title">Кадры из фильма</h1>
+                    <p class="all_tralers">Все кадры →</p>
+                </div>
+                <h4 class="name_movie_poster"></h4>
+                <div class="cadr_box">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="similar">
+        <div class="container">
+            
+                <h1 class="center_title">Похожие фильмы</h1>
+            
+
+            <div class="swiper mySwiperSimilar">
+                <div class="swiper-wrapper" id="similarMovie">
+                    
+                </div>
+                
+                <div class="pag_bar">
+                    <div id="prev_actor" class="swiper-button-prev"></div>
+                    <div id="pag_actor" class="swiper-pagination"></div>
+                    <div id="next_actor" class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
